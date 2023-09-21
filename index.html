@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="styles.css"> <!-- You can link to an external CSS file for styling -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.2.9/marked.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Recipes</h1>
+        <p>Explore delicious recipes and cooking tips</p>
+    </header>
+    
+    <nav>
+        <!-- You can add navigation links here -->
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+          <div id="recipe-content"><script>
+    // Fetch the Markdown content from your server
+    fetch('Spicy Chicken Alfredo Pasta.md')
+        .then(response => response.text())
+        .then(markdownText => {
+            // Convert Markdown to HTML using Marked
+            const htmlContent = marked(markdownText);
+
+            // Insert the HTML content into the <div>
+            document.getElementById('recipe-content').innerHTML = htmlContent;
+        })
+        .catch(error => console.error('Error fetching Markdown:', error));
+</script></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2023 My Recipes</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
