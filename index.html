@@ -24,15 +24,15 @@
     <main>
         <section>
           <div id="recipe-content"><script>
-    // Fetch the Markdown content from your server
-    fetch('Spicy Chicken Alfredo Pasta.md')
-        .then(response => response.text())
-        .then(markdownText => {
-            // Convert Markdown to HTML using Marked
-            const htmlContent = marked(markdownText);
-
-            // Insert the HTML content into the <div>
-            document.getElementById('recipe-content').innerHTML = htmlContent;
+            // Fetch the Markdown content from your server
+            fetch('Spicy Chicken Alfredo Pasta.md')
+                .then(response => response.text())
+                .then(markdownText => {
+                    // Convert Markdown to HTML using Marked
+                    const htmlContent = marked(markdownText);
+        
+                    // Insert the HTML content into the <div>
+                    document.getElementById('recipe-content').innerHTML = htmlContent;
         })
         .catch(error => console.error('Error fetching Markdown:', error));
 </script></div>
