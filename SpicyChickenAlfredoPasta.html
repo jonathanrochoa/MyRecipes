@@ -6,6 +6,8 @@
     <title>Recipe 1</title>
     <link rel="stylesheet" href="styles.css"> <!-- You can link to an external CSS file for styling -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.2.9/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
 </head>
 <body>
 <main>
@@ -20,22 +22,7 @@
                 <p>&copy; 2023 My Recipes</p>
             </footer>
             
-            <!-- Add the <script> block here -->
-            <script>
-                // Function to load content from a Markdown file and render it as HTML
-                function loadRecipe(recipeFileName) {
-                    fetch(recipeFileName)
-                        .then(response => response.text())
-                        .then(markdownText => {
-                            const htmlContent = marked(markdownText);
-                            document.getElementById('recipe-content').innerHTML = htmlContent;
-                        })
-                        .catch(error => console.error('Error fetching Markdown:', error));
-                }
-
-                // Specify the Markdown file for this recipe here
-                loadRecipe('SpicyChickenAlfredoPasta.md');
-            </script>
+            <zero-md src="SpicyChickenAlfredoPasta.md"></zero-md>
         </section>
     </main>
 </body>
