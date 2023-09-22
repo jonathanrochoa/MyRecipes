@@ -10,6 +10,14 @@ header h1 {
     color: white;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the content takes up at least the full viewport height */
+}
+
 /* Style the navigation links */
 nav ul {
     list-style-type: none;
