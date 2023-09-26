@@ -4,29 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Recipes</title>
-    <link rel="stylesheet" href="styles.css"> <!-- You can link to an external CSS file for styling -->
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> <!-- You can link to an external CSS file for styling -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link href="styles.css" rel="stylesheet">
 </head>
-<header>
+
+<header class="container text-center bg-danger text-white py-5">
     <h1>Welcome to My Recipes</h1>
-    <p>Explore delicious recipes and cooking tips</p>
+    <p>These are my favorite meal recipes and products I recommend</p>
 </header>
     
-<nav>
- <!-- You can add navigation links here -->
+<nav class="navbar navbar-expand-lg navbar-light border-bottom mb-4">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Products.html">My Favorite Products</a>
+                </li>
+                <!-- Add more recipe links here -->
+            </ul>
+        </div>
+    </div>
 </nav>
     
 <body>
-    <main>
-        <ul>
-            <li><a href="SpicyChickenAlfredoPasta.html">Spicy Chicken Alfredo Pasta</a></li>
-            <li><a href="recipe2.html">Recipe 2</a></li>
-            <!-- Add more recipe links to your other recipe HTML files -->
-        </ul>
-    </main>
-    
-    <footer>
+    <footer class="container text-center mt-5">
         <p>&copy; 2023 My Recipes</p>
     </footer>
 </body>

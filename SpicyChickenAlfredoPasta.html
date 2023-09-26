@@ -3,27 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe 1</title>
-    <link rel="stylesheet" href="styles.css"> <!-- You can link to an external CSS file for styling -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/marked/2.2.9/marked.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
-    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <title>Spicy Chicken Alfredo Pasta</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
+<header class="container text-center bg-danger text-white py-5">
+    <h1>Welcome to My Recipes</h1>
+    <p>These are my favorite meal recipes and products I recommend</p>
+</header>
+    
+<nav class="navbar navbar-expand-lg navbar-light border-bottom mb-4">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Recipes.html">Recipes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Products.html">My Favorite Products</a>
+                </li>
+                <!-- Add more recipe links here -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
 <body>
-<main>
+    <main class="recipe-content container mt-5">
         <section>
-            <h1>Spicy Chicken Alfredo Pasta</h1>
-            <p>Preparation Time: 35 minutes</p>
-            
-            <!-- This is where the content from the SpicyChickenAlfredoPasta.md will be loaded -->
-            <div id="recipe-content">
-                <zero-md src="SpicyChickenAlfredoPasta.md"></zero-md>
-            </div>
-        
-            <footer>
-                <p>&copy; 2023 My Recipes</p>
-            </footer>
+            <h1 class="mb-4">Spicy Chicken Alfredo Pasta</h1>
+            <p><strong>Preparation Time:</strong> 35 minutes</p>
+
+            <h2 class="mt-4">Ingredients</h2>
+            <ul>
+                <li>3 Chicken Breasts (cut in thin strips)</li>
+                <li>4 oz Penne Pasta (cooked & drained)</li>
+                <li>1/2 cup Pasta water</li>
+                <li>Alfredo Sauce (made or store-bought)</li>
+                <li>1/2 lb. Bella Mushrooms</li>
+                <li>1/2 cup Julienne Cut Sun-Dried Tomatoes</li>
+                <li>2 Tbsp. chopped garlic</li>
+                <li>1 cup Green Onions (French cut)</li>
+                <li>1 tbsp Salt</li>
+                <li>1 tsp Black Pepper</li>
+                <li>2 tbsp Cayenne Pepper</li>
+                <li>1 tsp Onion powder</li>
+                <li>2 tbsp oil (of your choice)</li>
+            </ul>
+
+            <h2 class="mt-4">Instructions</h2>
+            <ol>
+                <li>Cook Pasta Water: Cook penne pasta according to instructions. Save 1/2 cup of pasta water before draining pasta. Drain pasta once cooked.</li>
+                <li>Season and Cook Chicken: Cut the chicken breasts into thin strips and season with the Salt, Pepper, Onion Powder, and 1/2 tbsp of Cayenne Pepper. Cook until ready in 1 tbsp of oil.</li>
+                <li>Combine Food: In a new deep pan, deep enough to hold all your ingredients, pour 1 tbsp of oil and cook the garlic for about 2 minutes or until light brown. Add the Sun-Dried Tomatoes and cook for about 2 more minutes. Add the mushrooms and cook for about 2-3 minutes. Add your cooked chicken and green onions as well as the rest of your Cayenne Pepper, mix all ingredients well for about a minute. Finally toss in your cooked pasta and the Alfredo sauce and mix well. You can add pasta water according to your like of sauce consistency. Mix well for about 2 minutes. Your Spicy Chicken Alfredo Pasta is now ready to serve.</li>
+            </ol>
         </section>
     </main>
+
+    <!-- Include Bootstrap JavaScript (required for some Bootstrap features) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
